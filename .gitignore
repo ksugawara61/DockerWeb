@@ -1,4 +1,4 @@
-app/web/
+app/
 !app/index.html
 
 log/nginx/default/*
