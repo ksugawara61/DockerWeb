@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./containers/nginx/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      TZ: "Asia/Tokyo"
+    volumes:
+      - "./log/nginx/default:/var/log/nginx/default"
+      - "./log/nginx/web:/var/log/nginx/web"
+    restart: unless-stopped

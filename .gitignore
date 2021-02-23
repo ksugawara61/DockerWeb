@@ -1,0 +1,7 @@
+app/web/
+!app/index.html
+
+log/nginx/default/*
+!log/nginx/default/.gitkeep
+log/nginx/web/*
+!log/nginx/web/.gitkeep
